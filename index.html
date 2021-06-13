@@ -2,37 +2,40 @@
 <html lang="en">
 
     <head>
-        <!-- Required meta tags always come first -->
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-         <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css" />
     
         <title>NuCamp: A Better Way To Camp</title>
     </head>
 
 <body>
-
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-content align-items-center">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                   <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
+                </div>
                 <div class="column">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-2 tm-4">
+                    <a href="#reserveForm"><button class="btn btn-info btn-lg float-right">Reserve Campsite</button></a>
                 </div>
             </div>
         </div>
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -45,46 +48,133 @@
             </div>
         </div>
     </nav>
-        
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="aboutus.html">About</a></li>
+                    <li class="breadcrumb-item"><a href="#">Sites</a></li>
+                    <li class="breadcrumb-item active"><a href="contactus.html">Contact</a></li>
+                </ol>
+                <h2>Home</h2>
+                <hr />
+            </div>
+        </div>
+    </div>
        
+    <!-- END OF JUMBOTRON, NAV and BREADCRUMBS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
     <div class="container">
         <div class="row row-content align-items-center">
+            <!-- Discover and Review-->
             <div class="col-sm-4  col-md-3">
-                <h2 class="text-sm-right">Discover & Review--LOTS of fun for all</h2>
+                <h2 class="text-sm-right">Discover & Review</h2>
             </div>
+
+
             <div class="col">
-                <h3>Our Campsites</h3>
-                <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
+                    <div class="media-body align-self-center">
+                        <h3>Our Campsites</h3>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                    </div>
+                </div>
             </div>
         </div>
-   
-
+    
+                <!-- Featured Campsites-->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="col mt-4">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block ml-3">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                        <img class="d-flex ml-3 img-thumbnail float-right" src="img/react-lake-thumb.jpg" alt="React Lake Campground" />
+                </div>
             </div>
         </div>
 
-        <div class="row row-contentnp">
-            <div class="col-sm-4 col-me-3">
+            
+
+        <!-- Our Community Partners-->
+        <div class="row row-content">
+            <div class="col-sm-4 col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
             </div>
+
             <div class="col">
-                <h3>Bootstrap Outfitters</h3>
-                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                    <div class="media-body align-self-center">
+                        <h3>Bootstrap Outfitters</h3>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+           <!-- Reserve a Campsite----------------------------------------------------------->
+    
+    
+
+
+
+
+
+
+
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form class="form-group" id="reserveForm">
+                            <div class="row">
+                                <label class="col-sm-6 col-xs-12 col-form-label">Number of Campers</label>
+                                <div class="col col-xs-12">
+                                    <select name="nuCampers" id="nuCampers" class="form-control">
+                                        <option>Select...</option> 
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div><!-- End col div that wraps select-->
+                            </div><!-- End row div #1-->
+
+                            <div class="row">
+                                <label class="col-sm-6 col-xs-12 col-form-label" for="date">Date</label>
+                                <div class="col-sm-6 col-xs-12">
+                                    <input type="date" id="date" name="date" placeholder="date" class="form-control">
+                                </div><!-- End col div that wraps input-->
+                            </div><!-- End row div #2-->
+
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                            </div><!-- End row div #3-->
+
+                        </form>
+                    </div><!-- End card-body-->
+                </div><!-- End card-->
+            </div><!-- End col-sm-6-->
+        </div><!-- End row row-content-->
+    </div> <!-- End overall container-->
+         
 
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="col-4 offset-1 col-sm-2">
+                <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html">Home</a></li>
@@ -104,16 +194,14 @@
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
                     <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
-            </div>
+           </div>
         </div>
     </footer>
 
-<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
-
-
 </html>
