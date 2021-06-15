@@ -21,7 +21,7 @@
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                    <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
                 </div>
-                <div class="column">
+                <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
@@ -93,7 +93,7 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <div class="col mt-4">
+                    <div class="col mt-4 media-body">
                         <h3>React Lake Campground</h3>
                         <p class="d-none d-sm-block ml-3">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
@@ -135,11 +135,11 @@
                 <div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
-                        <form class="form-group" id="reserveForm">
-                            <div class="row">
+                        <form id="reserveForm">
+                            <div class="row form-group">
                                 <label class="col-sm-6 col-xs-12 col-form-label">Number of Campers</label>
                                 <div class="col col-xs-12">
-                                    <select name="nuCampers" id="nuCampers" class="form-control">
+                                    <select name="numCampers" id="numCampers" class="form-control">
                                         <option>Select...</option> 
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -151,14 +151,14 @@
                                 </div><!-- End col div that wraps select-->
                             </div><!-- End row div #1-->
 
-                            <div class="row">
+                            <div class="row form-group">
                                 <label class="col-sm-6 col-xs-12 col-form-label" for="date">Date</label>
                                 <div class="col-sm-6 col-xs-12">
                                     <input type="date" id="date" name="date" placeholder="date" class="form-control">
                                 </div><!-- End col div that wraps input-->
                             </div><!-- End row div #2-->
 
-                            <div class="row">
+                            <div class="row form-group">
                                 <div class="col">
                                     <button type="submit" class="btn btn-primary">Search</button>
                                 </div>
